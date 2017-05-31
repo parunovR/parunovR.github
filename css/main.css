@@ -52,6 +52,7 @@ p, li, a, input, button {
 .btn {
   border: 3px solid #ffcc99;
   text-decoration: none;
+  position: relative;
 }
 
 .btn:hover {
