@@ -36,8 +36,13 @@ p, li, a, input, button {
   src: url('../fonts/HKGrotesk-Light.otf');
 }
 
-
 .wrapper {
+  max-width: 1160px;
+	margin: 0 auto;
+}
+
+
+/*.wrapper {
   height: 100%;
   width: 1160px;
 	margin: 0 auto;
@@ -47,7 +52,7 @@ p, li, a, input, button {
   max-width: 1160px;
 	margin: 0 auto;
 	padding: 0;
-}
+}*/
 
 .btn {
   border: 3px solid #ffcc99;
