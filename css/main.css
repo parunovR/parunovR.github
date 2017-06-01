@@ -158,6 +158,25 @@ a.logo {
   outline: none;
 }
 
+.search-form input:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  opacity: 0;
+  box-sizing: border-box;
+  top: 0;
+  right: 0;
+  border-bottom: 3px solid white;
+  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
+}
+.search-form input:focus:after {
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
+}
+
 .prewiew-top {
   height: 690px;
   margin-bottom: 40px;
