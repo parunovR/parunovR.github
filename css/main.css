@@ -146,7 +146,7 @@ a.logo {
   border: none;
   background-color: #272f45;
   border-bottom: 3px solid #63757e;
-  padding-bottom: 8px;
+  padding-bottom: 9px;
   color: #92a1a9;
 }
 
@@ -156,25 +156,6 @@ a.logo {
 
 .search-form input:focus {
   outline: none;
-}
-
-.search-form input:after {
-  content: "";
-  position: absolute;
-  width: 0;
-  height: 0;
-  opacity: 0;
-  box-sizing: border-box;
-  top: 0;
-  right: 0;
-  border-bottom: 3px solid white;
-  transition: 0s ease opacity .4s, .2s ease width , .2s ease height .2s;
-}
-.search-form input:focus:after {
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  transition: 0s ease opacity .4s, .2s ease height .4s , .2s ease width .6s;
 }
 
 .prewiew-top {
