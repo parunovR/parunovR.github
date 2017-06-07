@@ -212,6 +212,7 @@ a.logo {
 .shop-now-btn-wrap {
   max-width: 162px;
   margin-top: 135px;
+  margin-bottom: 35px;
 }
 
 .shop-now-btn {
@@ -231,7 +232,7 @@ a.logo {
 
 .product-prewiew__block {
   height: 520px;
-  width: 560px;
+  width: calc(50% - 20px);
   float: left;
 }
 
@@ -504,6 +505,10 @@ a.logo {
     text-align: center;
   }
 
+  .prewiew-top {
+    height: auto;
+  }
+
   .prewiew-description p {
     width: auto;
   }
@@ -521,5 +526,14 @@ a.logo {
 
   .shop-now-btn-wrap {
     margin-top: 35px;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-prewiew__block {
+    width: 560px;
+  }
+  .product-prewiew__left {
+    margin-bottom: 40px;
   }
 }
