@@ -21,6 +21,7 @@ input:focus {
 .pr {position: relative;}
 .pa {position: absolute;}
 .p0 {padding: 0!important;}
+.ac {text-align: center;}
 
 h1, h2, h3, h4, h5, h6,
 p, li, a, input, button {
@@ -296,30 +297,31 @@ a.logo {
 
 .product-prewiew__small {
   margin-bottom: 40px;
+  text-align: justify;
 }
 
 .product-prewiew__small-block {
-  float: left;
-  margin-right: 40px;
+  display: inline-block;
+  margin-right: 36px;
   text-align: center;
-  width: 360px;
+  width: 31%;
   height: 440px;
   overflow: hidden;
 }
 
 .product-prewiew__small--left {
   background-color: #ff6666;
-  background: url('../img/molekule.jpg');
+  background: url('../img/molekule.jpg') center no-repeat;
 }
 
 .product-prewiew__small--center {
   background-color: #557581;
-  background: url('../img/p9-signature.jpg');
+  background: url('../img/p9-signature.jpg') center no-repeat;
 }
 
 .product-prewiew__small--right {
   background-color: #99cccc;
-  background: url('../img/dr-2.jpg');
+  background: url('../img/dr-2.jpg') center no-repeat;
   margin-right: 0;
 }
 
@@ -471,10 +473,52 @@ a.logo {
   letter-spacing: 0.25px;
 }
 
+@media (max-width: 1200px) {
+  .product-prewiew__small {
+    text-align: center;
+  }
+  .product-prewiew__small-block {
+    margin-bottom: 40px;
+    width: 360px;
+  }
+  .product-prewiew__small-block:last-child {
+    margin-bottom: 0;
+  }
+  .product-prewiew__small--center {
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 992px) {
+  .product-prewiew__block {
+    width: 560px;
+    margin: 0 auto;
+    float: none;
+  }
+  .product-prewiew__left {
+    margin-bottom: 40px;
+  }
+
+  .product-prewiew__small-block {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .product-prewiew__small-block:last-child {
+    margin-bottom: 0;
+  }
+  .subscribe-block {
+    padding-top: 0;
+  }
+  .subscribe-block__text {
+    padding: 16px 0;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 100%;
-    min-width: 310px;
+    min-width: 300px;
     margin: 0 5px;
   }
 
@@ -517,6 +561,27 @@ a.logo {
   }
 }
 
+@media (max-width: 560px) {
+  .product-prewiew__block {
+    width: 100%;
+  }
+}
+
+@media (max-width: 590px) {
+  .footer-nav {
+    max-width: 440px;
+  }
+  .footer-menu li {
+    float: none;
+    display: inline-block;
+    margin-bottom: 10px;
+  }
+  .footer-menu li:before {
+    content: '';
+  }
+
+}
+
 @media (max-width: 480px) {
   .prewiew-description {
     margin-top: 170px;
@@ -532,19 +597,17 @@ a.logo {
   }
 }
 
-@media (max-width: 992px) {
-  .product-prewiew__block {
-    width: 560px;
-    margin: 0 auto;
-    float: none;
-  }
-  .product-prewiew__left {
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width: 560px) {
-  .product-prewiew__block {
+@media (max-width: 360px) {
+  .product-prewiew__small-block {
     width: 100%;
+  }
+  .subscribe-block form input[type="email"] {
+    width: 100%;
+    padding: 15px 0 11px;
+    box-sizing: border-box;
+  }
+  .subscribe-block form button {
+    width: 100%;
+    padding: 20px 0 13px;
   }
 }
