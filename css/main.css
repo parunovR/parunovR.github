@@ -159,7 +159,11 @@ a.logo {
   border: none;
   background-color: #272f45;
   border-bottom: 3px solid #63757e;
-  border-radius: 0;
+  -webkit-border-radius: 0;
+     -moz-border-radius: 0;
+      -ms-border-radius: 0;
+       -o-border-radius: 0;
+          border-radius: 0;
   padding-bottom: 9px;
   color: #92a1a9;
 }
