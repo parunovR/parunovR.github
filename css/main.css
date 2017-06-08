@@ -561,6 +561,10 @@ a.logo {
     height: auto;
   }
 
+  .prewiew-description {
+    margin: 190px 20px 0 20px;
+  }
+
   .prewiew-description p {
     width: auto;
   }
