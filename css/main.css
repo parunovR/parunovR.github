@@ -234,6 +234,7 @@ a.logo {
   height: 520px;
   width: calc(50% - 20px);
   float: left;
+  overflow: hidden;
 }
 
 .product-prewiew__left {
@@ -246,6 +247,7 @@ a.logo {
 .product-prewiew__right {
   background-color: #6666cc;
   background: url("../img/leica-mp.jpg") no-repeat;
+  text-align: left;
 }
 
 .product-prewiew__block .h2 {
@@ -302,6 +304,7 @@ a.logo {
   text-align: center;
   width: 360px;
   height: 440px;
+  overflow: hidden;
 }
 
 .product-prewiew__small--left {
@@ -532,8 +535,16 @@ a.logo {
 @media (max-width: 992px) {
   .product-prewiew__block {
     width: 560px;
+    margin: 0 auto;
+    float: none;
   }
   .product-prewiew__left {
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .product-prewiew__block {
+    width: 100%;
   }
 }
