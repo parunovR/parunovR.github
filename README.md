@@ -1,1 +1,1 @@
-# (https://parunovr.github.io/parunovR.github/)
+# https://parunovr.github.io/parunovR.github/
